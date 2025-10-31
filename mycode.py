@@ -15,8 +15,9 @@ new_row_df = pd.DataFrame([new_row_loc])
 df = pd.concat([df, new_row_df], ignore_index=True)
 
 # # # Adding new row to df for V3
-# new_row_loc2 = {'Name': 'GF2', 'Age': 30, 'City': 'City2'}
-# df.loc[len(df.index)] = new_row_loc2
+new_row_loc2 = {'Name': 'GF2', 'Age': 30, 'City': 'City2'}
+new_row_df = pd.DataFrame([new_row_loc2])
+df = pd.concat([df, new_row_df], ignore_index=True)
 
 # Ensure the "data" directory exists at the root level
 data_dir = 'data1'
